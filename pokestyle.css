@@ -1,0 +1,71 @@
+body {
+  background-color: #eff3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  margin-top: 50px; /* reduced for less top gap */
+}
+
+.container {
+  width: 280px;
+  border-radius: 8px;
+}
+
+#card {
+  background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 18px; /* was 24px → less padding for shorter height */
+  text-align: center;
+}
+
+#card img {
+  width: 144px;
+  max-height: 130px; /* was 160px → reduced height */
+  margin: 12px auto; /* less margin */
+}
+
+.hp {
+  background-color: white;
+  width: 64px;
+  padding: 5px 0; /* was 6px */
+  margin-left: auto;
+  border-radius: 24px;
+}
+
+.types {
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 0; /* was 16px */
+}
+
+.types span {
+  padding: 3px 14px; /* slightly reduced height */
+  border-radius: 16px;
+  color: white;
+  font-size: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+}
+
+#btn, #download {
+  display: block;
+  width: 100%;
+  padding: 8px; /* was 10px */
+  margin-top: 6px; /* was 8px */
+  font-size: 13px;
+  border: none;
+  color: white;
+  background-color: #101010;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#download {
+  background-color: #28a745;
+}
